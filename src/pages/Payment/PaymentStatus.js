@@ -7,7 +7,7 @@ import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import '../Payment/PaymentStatus.css'
 import { getUserConfigurations } from '../../slices/configurationSlice';
 import { getUserPlans } from '../../slices/plansSlice';
-import { MERCADOPAGO_PUBLIC_KEY } from "../utils/config";
+import { MERCADOPAGO_PUBLIC_KEY } from "../../utils/config";
 
 const PaymentStatus = () => {
     const navigate = useNavigate();

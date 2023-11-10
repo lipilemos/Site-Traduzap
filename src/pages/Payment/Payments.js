@@ -8,7 +8,7 @@ import { processPayment, createPreference, reset } from '../../slices/paymentsSl
 import { Wallet, initMercadoPago } from '@mercadopago/sdk-react'
 import './Payments.css'
 import { getUserPlans } from '../../slices/plansSlice';
-import { MERCADOPAGO_PUBLIC_KEY } from "../utils/config";
+import { MERCADOPAGO_PUBLIC_KEY } from "../../utils/config";
 
 const Payments = () => {
   const { id: planId } = useParams();
