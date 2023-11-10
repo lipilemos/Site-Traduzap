@@ -1,0 +1,35 @@
+.detail-name-h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.detail-name-span {
+    font-weight: 100;
+    font-size:x-large;
+    text-transform: lowercase;    
+}
+.detail-image img{  
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 50px;  
+}
+.detail-list li{
+  list-style:circle;
+  margin-bottom:50px;
+
+}
+.detail-list {
+  background-color: transparent;
+  padding: 0;
+  justify-content: center;
+}
+.detail-list p{
+  margin: 0.5em;
+  padding: 0;
+}
+b{
+  color: red;
+}
+p{
+  margin: 0.5em 1em;
+  padding: 0;
+}

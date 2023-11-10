@@ -1,0 +1,15 @@
+[class^="svelte"] header{
+    
+    background-color: #f8f8f8;  
+   /* color: #fff; */
+   /* padding: 10px; */
+    height: auto; 
+   display:block; 
+padding-bottom: 10px;
+}
+[class^="svelte"] span{
+    font-size: medium;
+}
+#statusScreenBrick_container{
+    max-width: 600px;
+}

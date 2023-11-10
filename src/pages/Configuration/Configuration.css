@@ -1,0 +1,93 @@
+.text-container{
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 0;
+margin: auto;
+
+}
+.tipo_plan.free{
+    margin: 0;
+    font-size: large;
+    text-transform: uppercase;
+    color:rgb(233, 66, 233);
+}
+.tipo_plan.basic{
+    font-size: large;
+    text-transform: uppercase;
+    color:rgb(0, 128, 122);
+}
+.tipo_plan.plus{
+    font-size: large;
+    text-transform: uppercase;
+    color:rgb(185, 206, 0);
+}
+.tipo_plan.custom{
+    font-size: large;    
+    margin: 0;
+    text-transform: uppercase;
+    color:rgb(72, 0, 206);
+}
+form {
+    margin: auto;
+    max-width: 600px;
+}
+span{
+    font-weight: 100;
+    font-size:x-large;  }
+em{
+    font-weight: 100;
+    font-size: small;
+    color: rgb(219, 106, 106);
+}
+.slider-container{
+    display: flex;
+    margin: 8px 0;
+    align-items: center;
+    justify-content: center;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.counter h4{
+    margin: 0 16px;
+}
+.slider-label{
+    margin: 0 6px;
+}
+
+div canvas{
+    width: 250px;
+    height: auto;
+}
+.hide{
+display: none;
+}
+
+.list-btn{
+    cursor: pointer;
+    width: 24px;;
+}
+.lista{    
+    margin: 0;
+    padding: 0; 
+    align-items: center;
+    justify-content: center;   
+    background-color: transparent;    
+    }
+
+    .list-container{        
+        max-width: 300px;
+        margin: auto;
+    }
+.list-container input{
+    margin: 0;
+    padding: 10px;
+    text-align: right;
+}
+.list-container img{
+    left: 0;
+}

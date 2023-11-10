@@ -1,0 +1,29 @@
+.about{
+    background-color: transparent;
+    list-style: square;    
+    text-align: left;
+    padding-top: 0;    
+}
+.about b{
+    color: black;
+    min-width: 125px;
+    
+}
+.plan{
+    justify-content: left;
+    display: flex;
+}
+.plan b{
+    text-align: left;
+    justify-content: center;
+}
+.tradu{
+    padding: 5px;
+}
+.link{
+    padding: 0 0.2em;
+    color: black;
+    text-decoration: underline;
+    font-weight: 100;
+    font-family: Arial, sans-serif;
+}

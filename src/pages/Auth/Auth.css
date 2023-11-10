@@ -1,0 +1,147 @@
+#login,
+#register {
+  padding: 1.5em 0.5em;
+  max-width: 600px;
+  margin: 2em auto;  
+}
+
+.btn,
+button,
+input[type="submit"] {  
+  background-color: #008a7c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 8px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1em;    
+  margin-left: auto;
+  margin-top: 10px;
+}
+input{  
+  background: transparent;
+  padding:0;
+  margin-left:19px;
+  font-size: 16px;
+  border: none;  
+  display: block;  
+  margin-top: 6px;
+  margin-bottom: 6px;    
+} 
+.submitDiv{  
+  position: relative;  
+  width: 100%;
+  float: right;   
+  right: 0;
+}
+#login h2,
+#register h2 {
+  text-align: center;
+  font-size: 2.1em;
+  margin-top: 0;
+}
+.subtitle {
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 1.5em;
+}
+
+#login form,
+#register form {
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #363636;  
+  display: inline-block;  
+  min-width: 100%;  
+}
+
+#login p,
+#register p {
+  text-align: center;
+}
+
+#login p a,
+#register p a {
+  font-weight: bold;
+  color: #0094f6;
+  margin: 0;
+  padding: 0;
+}
+
+
+#login span, 
+#register span{
+  font-weight: 100;
+  font-size:x-large;  
+}
+/* Conversation */
+.conversation {  
+  position:relative;
+  z-index: 0;
+  text-align: left;
+}
+
+/* Messages */
+.message {
+  color: #000;
+  clear: both;
+  line-height: 18px;
+  font-size: 15px;
+  padding: 8px;
+  position: relative;
+  margin: 8px 0;
+  max-width: 85%;
+  word-wrap: break-word;
+  z-index: -1;
+}
+
+.message:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.metadata .tick {
+  display: inline-block;
+  margin-left: 0;
+  position: relative;
+  top: 4px;
+  height: 16px;
+  width: 16px;
+}
+
+.message.received {
+  background: #fff;
+  border-radius: 0px 5px 5px 5px;
+  float: left;
+  margin-top: 20px;
+  left: -20px;
+}
+.message.received h3{
+  margin: 2px;
+}
+
+.message.received:after {
+  border-width: 0px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  top: 0;
+  left: -10px;
+}
+.message.sent {
+  background: #e1ffc7;
+  border-radius: 5px 0px 5px 5px;
+  float: right;
+  margin-top: 20px;
+  right: -20px;
+}
+
+.message.sent:after {
+  border-width: 0px 0 10px 10px;
+  border-color: transparent transparent transparent #e1ffc7;
+  top: 0;
+  right: -10px;
+}

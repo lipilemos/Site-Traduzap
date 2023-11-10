@@ -1,0 +1,3 @@
+C:\Users\liped\Documents\ProjetosReact\site-ZAP-GPT\site-zap-gpt\obj\Debug\SiteTraduZap.njsproj.AssemblyReference.cache
+C:\Users\liped\Documents\ProjetosReact\site-ZAP-GPT\site-zap-gpt\obj\Debug\SiteTraduZap.njsproj.CoreCompileInputs.cache
+C:\Users\liped\Documents\ProjetosReact\site-ZAP-GPT\site-zap-gpt\bin\Microsoft.NodejsTools.WebRole.dll
