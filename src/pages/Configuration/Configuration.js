@@ -138,7 +138,9 @@ const Configuration = () => {
           <img className="imagemW" src={imgWhats} alt="whatsapp" />
           <input type='number' placeholder='(99)999999999' required disabled={configuration && configuration.numberPhoneWhatsapp ? 'disabled' : ''} name='name' value={numberPhoneWhatsapp || ""} onChange={(e) => setNumberPhoneWhatsapp(e.target.value)} />
         </div>
-        {!configuration.numberPhoneWhatsapp &&
+        {configuration && configuration.numberPhoneWhatsapp ?
+        <></>
+        :
           <>
             <p><em className="required">*Este numero não poderá ser alterado mais tarde</em></p>
             <p><em className="required">Use o número que está nas configurações do seu whatsapp</em></p>
