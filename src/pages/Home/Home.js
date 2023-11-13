@@ -94,8 +94,8 @@ const Home = () => {
 
 
 <p>Informações sobre produtos e serviços, Sugestão, Elogio, Reclamação e Denúncia.</p>
-<p>(11)99109-7337 - Capitais e Regiões Metropolitanas (fixos e Celular) e Demais Localidades (Celular)</p>
-<p><Link to={'mailto:lipe.dev@outlook.com.br'}>lipe.dev@outlook.com.br</Link></p>
+<p>(48)8865-3057 - Capitais e Regiões Metropolitanas (fixos e Celular) e Demais Localidades (Celular)</p>
+<p><Link to={'mailto:traduzapapp@gmail.com'}>traduzapapp@gmail.com</Link></p>
 
 
 <span>Horário de atendimento (exceto feriados):</span>
