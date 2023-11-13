@@ -13,23 +13,8 @@ const Plans = () => {
     <div>
     <div className="titleh1">
         <h1>P<span>reços e Planos:</span></h1>
-        <p>Todos os nossos planos são recorrentes mensalmente, escolha o melhor plano que se enquadre ao seu perfil e ao seu bolso </p>
-    </div>
-    <div className={width <= 1000 ? 'smartplans' : 'plans'} style={{justifyContent:'center'}}>
-        <li>
-            <div className='pla'>
-                <span>Free</span>
-                <img src={imgplan4}alt="plan3"/>
-                <p>Limite de 100 caracteres transcritos.</p>
-                <p>Limite diário de 10 audios.</p>                  
-                <p>Até 100 audios transcritos.</p>  
-                <p>Use até acabar a frânquia.</p>
-                <Link to={"/plans/64cc09f4031c07b9b573f828"}>
-                    <button id="64cc09f4031c07b9b573f828" >Contratar</button>
-                </Link>
-            </div>            
-        </li>
-    </div>
+        <p>Todos os nossos planos não são recorrentes, escolha o melhor plano que se enquadre ao seu perfil e ao seu bolso </p>
+    </div>    
     <div className={width <= 1000 ? 'smartplans' : 'plans'}>
         <li>
             <div className='pla'>
@@ -79,6 +64,21 @@ const Plans = () => {
             </div>            
         </li>
     </div>      
+    <div className={width <= 1000 ? 'smartplans' : 'plans'} style={{justifyContent:'center'}}>
+        <li>
+            <div className='pla'>
+                <span>Free</span>
+                <img src={imgplan4}alt="plan3"/>
+                <p>Limite de 100 caracteres transcritos.</p>
+                <p>Limite diário de 10 audios.</p>                  
+                <p>Até 100 audios transcritos.</p>  
+                <p>Use até acabar a frânquia.</p>
+                <Link to={"/plans/64cc09f4031c07b9b573f828"}>
+                    <button id="64cc09f4031c07b9b573f828" >Contratar</button>
+                </Link>
+            </div>            
+        </li>
+    </div>
 </div>
   )
 }
