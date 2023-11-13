@@ -32,6 +32,7 @@ import avatar7 from './avatar/p7.jpg';
 import { useEffect } from 'react';
 import { getAllTypesPlans } from './slices/typesPlansSlice';
 import About from './pages/About/About';
+import Policy from './pages/Policy/Policy';
 
 
 const users = [{name : "Antonio Carlos",comment: "Eu aprendi como usar agora", avatar: avatar1},
@@ -100,6 +101,7 @@ function App() {
           <Route path='/users/config/:id' element={auth && userPlan ? <Configuration /> : <Navigate to='/plans' />}/>           
           <Route path='/users/:id' element={auth ? <EditProfile /> : <Navigate to='/login' />} />
           <Route path='/about' element={<About/>}/>
+          <Route path='/policy' element={<Policy/>}/>
           </Routes>
           </div>
       </div>  
