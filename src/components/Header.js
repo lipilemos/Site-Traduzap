@@ -28,7 +28,7 @@ const Header = () => {
   
   return (
     <header className={width < 600 ? 'smart-header' : '' }>        
-        <NavLink to='/'><h1><img className='logo' src={imgLogoZap} alt='logoZap'/>TraduZap</h1></NavLink>
+        <NavLink to='/'><h1><img className='logo' src={imgLogoZap} alt='logoZap'/>TraduzApp</h1></NavLink>
         <div>
         <nav>
         <NavLink to='/'><img className='logo' src={imgHome} alt='logoZap'/></NavLink>

@@ -1,9 +1,16 @@
-.imagemW{
+.imagemW {
     margin-bottom: 10px;
 }
-.sh3{
-position: relative;
-margin: 0;
-padding: 0;
-font-size: small;
+
+.sh3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+.foot {    
+    display: block;
+    position: relative;
+    bottom: 0;    
 }

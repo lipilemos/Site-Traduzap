@@ -121,6 +121,7 @@ const Configuration = () => {
     }
     dispatch(deleteListContact(newConfiguration));
   }
+  //console.log(userPlan.usageUse)
   return (
     <div>
       <h1>C<span>onfiguração</span></h1>
@@ -129,6 +130,12 @@ const Configuration = () => {
       <div className="counter">
         <h4>Uso Hoje: {userPlan.usageChamadasAPI}/{plans.map((a) => a._id === userPlan.planId && a.limiteChamadasAPI)}</h4>
         <h4>Uso Total: {userPlan.usageUse}/{plans.map((a) => a._id === userPlan.planId && a.limiteUso)}</h4>
+      {userPlan && plans && userPlan.usageChamadasAPI === plans.map((a) => a._id === userPlan.planId && a.limiteChamadasAPI) &&      
+        <em>Limite diário excedido</em>      
+      }
+      {userPlan && plans && userPlan.usageUse === plans.map((a) => a._id === userPlan.planId && a.limiteUso) &&      
+        <em>Limite total do seu plano foi excedido</em>      
+      }
       </div>
       <form className='form-configuration' onSubmit={handleSubmit}>
         <div className="text-container">
