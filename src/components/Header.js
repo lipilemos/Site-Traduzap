@@ -5,7 +5,8 @@ import { useDispatch } from "react-redux";
 import { logout, reset } from "../slices/authSlice";
 import  {resetUserPlan} from '../slices/plansSlice'
 import { resetConfiguration } from '../slices/configurationSlice';
-import imgLogoZap from '../images/whatsapp-white.svg'
+//import imgLogoZap from '../../public/logo192.png'
+import imgLogoZap from '../images/logo192.png'
 import imgHome from '../images/home.svg'
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
@@ -28,10 +29,10 @@ const Header = () => {
   
   return (
     <header className={width < 600 ? 'smart-header' : '' }>        
-        <NavLink to='/'><h1><img className='logo' src={imgLogoZap} alt='logoZap'/>TraduzApp</h1></NavLink>
+        <NavLink to='/'><h1><img className='logo' src={imgLogoZap} alt='Logo'/>TraduzApp</h1></NavLink>
         <div>
         <nav>
-        <NavLink to='/'><img className='logo' src={imgHome} alt='logoZap'/></NavLink>
+        <NavLink to='/'><img className='logo' src={imgHome} alt='Home'/></NavLink>
         <NavLink to='/plans'>Planos</NavLink>
         <NavLink to='/howitworks'>Entenda</NavLink>
         <NavLink to='/about'>Sobre</NavLink>
