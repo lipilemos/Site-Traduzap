@@ -29,7 +29,8 @@ const MyUser = () => {
             {user.profileImage ? 
                 <img className="image" src={`${uploads}/users/${user.profileImage}`} alt={user.name} />                
                 :
-                <img className="image" src={`${uploads}/users/${useer.profileImage}`} alt={user.name} />                
+                <div></div>
+                // <img className="image" src={`${uploads}/users/${useer.profileImage}`} alt={user.name} />
             }
               <div className="txtmyuser">
                 <NavLink className="person" to={`/users/${user._id}`}>
