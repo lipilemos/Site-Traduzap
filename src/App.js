@@ -34,6 +34,8 @@ import { useEffect } from 'react';
 import { getAllTypesPlans } from './slices/typesPlansSlice';
 import About from './pages/About/About';
 import Policy from './pages/Policy/Policy';
+import ForgotPassword from './pages/Auth/ForgotPassword';
+import NewPassword from './pages/Auth/NewPassword';
 
 
 
@@ -104,6 +106,8 @@ function App() {
           <Route path='/users/:id' element={auth ? <EditProfile /> : <Navigate to='/login' />} />
           <Route path='/about' element={<About/>}/>
           <Route path='/policy' element={<Policy/>}/>
+          <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+          <Route path='/reset/:token' element={<NewPassword/>}/>
           </Routes>
           </div>          
       </div>  
