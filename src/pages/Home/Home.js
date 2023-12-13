@@ -95,6 +95,7 @@ const Home = () => {
                 <span>Horário de atendimento (exceto feriados):</span>
                 <p>Segunda à sexta, das 9h às 18h</p>
 
+<<<<<<< HEAD
                 <p>Para registros via email, <Link to={'mailto:traduzapapp@gmail.com'}>clique aqui.</Link></p>
                 <p>Soluções para o seu negócio.</p>
                 <p><Link to={'mailto:lipe.dev@outlook.com.br'}>Entre em contato.</Link></p>
@@ -104,6 +105,18 @@ const Home = () => {
             <p><Link style={{ color: "black" }} to={'/policy'}>Clique aqui.</Link></p>
         </>
     )
+=======
+<p>Para registros via internet, <Link to={'mailto:traduzapapp@gmail.com'}>clique aqui.</Link></p>
+<p>Soluções para o seu negócio.</p>
+<p>Saiba mais</p>
+
+<p>*Se houver uma seção de perguntas frequentes (FAQ), inclua-a para ajudar a esclarecer dúvidas comuns.**[CRIAR SESSÃO]</p>
+</div>
+<h3>Política de Privacidade e Segurança:</h3>
+<p><Link style={{color:"black"}} to={'/policy'}>Clique aqui.</Link></p>
+    </>
+  )
+>>>>>>> parent of 3d8fc8c (alteração de politica e inclusao de botao whats, melhoria de textos)
 }
 
 export default Home

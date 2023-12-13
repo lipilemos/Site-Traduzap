@@ -38,7 +38,7 @@ const About = () => {
                 <p><span>Escolha seu Plano:</span> Selecione o <Link className='link' to="/plans">plano</Link> que melhor atende às suas necessidades.</p>
                 <p><span>Efetue o Pagamento:</span> Complete o processo de pagamento de forma segura e rápida pelo MercadoPago.</p>
                 <p><span>Ative seu Plano:</span> Assim que o pagamento for confirmado, seu plano será ativado.</p>
-                <p><span>Configuração Personalizada:</span> Acesse a página de configurações para escanear o QRcode do WhatsApp e definir suas preferências de transcrição.<em style={{color: "black"}}>(Ah, você precisará estar em outro aparelho para escanear o QRCode e concluir essa etapa.)</em></p>
+                <p><span>Configuração Personalizada:</span> Acesse a página de configurações para escanear o QRcode do WhatsApp e definir suas preferências de transcrição.<em style={{color: "black"}}>(Ah, você precisará estar em um computador para concluir essa etapa, ou usar outro celular como tela para poder escanear o QRCode.)</em></p>
             </div>
             <div className='tradu'>
                 <p>O TraduzApp é a ferramenta definitiva para melhorar sua experiência de comunicação no WhatsApp. Comece hoje e descubra como é fácil acompanhar e entender todas as mensagens de áudio e texto em qualquer idioma.</p>

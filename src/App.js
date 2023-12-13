@@ -8,7 +8,6 @@ import { useAuth } from './hooks/useAuth';
 //components
 import LastUsers from './components/LastUsers';
 import MyUser from './components/MyUser/MyUser';
-import WhatsAppButton from './components/WhatsAppButton';
 import Header from './components/Header';
 //pages
 import Home from './pages/Home/Home';
@@ -36,7 +35,6 @@ import About from './pages/About/About';
 import Policy from './pages/Policy/Policy';
 import ForgotPassword from './pages/Auth/ForgotPassword';
 import NewPassword from './pages/Auth/NewPassword';
-
 
 
 const users = [{name : "Antonio Carlos",comment: "Eu aprendi como usar agora", avatar: avatar1},
@@ -99,7 +97,7 @@ function App() {
           <Route path='/plans/:id' element={<PlansDetails/>}/>
           <Route path='/' element={auth ? <Home/> : <Login/>} />            
           <Route path='/login' element={!auth ? <Login/> : <Navigate to='/' />}/>
-          <Route path='/register' element={!auth ? <Register/> : <Navigate to={`/users/${auth.id}`} />} />         
+          <Route path='/register' element={!auth ? <Register/> : <Navigate to='/' />} />         
           <Route path='/user/payment/status/:id' element={auth ? <PaymentStatus/> : <Login/>} />
           <Route path='/user/payment/:id' element={auth ? <Payments/> : <Login/>} />
           <Route path='/users/config/:id' element={auth && userPlan ? <Configuration /> : <Navigate to='/plans' />}/>           
@@ -109,9 +107,8 @@ function App() {
           <Route path='/forgotpassword' element={<ForgotPassword/>}/>
           <Route path='/reset/:token' element={<NewPassword/>}/>
           </Routes>
-          </div>          
+          </div>
       </div>  
-      <WhatsAppButton />
           </BrowserRouter>  
       <div className={`message-box ${width <= 1000 ? 'hidden' : ''}`}>
         <form onSubmit={handleSubmit}>

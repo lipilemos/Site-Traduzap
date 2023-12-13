@@ -90,7 +90,7 @@ const {width} = useWindowDimensions();
             </span>
         </div>  
         <div className="message received">
-            <h3>Audios mais longos</h3>
+            <h3>Entradas mais longas</h3>
         </div> 
         <div className="message sent">            
             Por padrão, a API Whisper só oferece suporte a arquivos com menos de 25 MB. Se você tiver um arquivo de áudio maior do que isso, será necessário dividi-lo em blocos de 25 MB ou menos ou usar um formato de áudio compactado. Para obter o melhor desempenho, sugerimos que você evite quebrar o áudio no meio da frase, pois isso pode fazer com que algum contexto seja perdido.Uma maneira de lidar com isso é usar o pacote Python de código aberto PyDub para dividir o áudio: A OpenAI não oferece garantias sobre a usabilidade ou segurança de softwares 3rd party como o PyDub.

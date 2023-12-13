@@ -119,9 +119,7 @@ const Payments = () => {
           //   ?
           //   <input type='submit' value='Upgrade' onClick={handleSubmitUpgrade} />
           //   :
-          plan && plan.name === 'free' &&
-            <input type='submit' value='Experimentar de graça' onClick={handleSubmit} />          
-          
+            <input type='submit' value='Pagar' onClick={handleSubmit} />          
         }
         <hr />
         <h5>Não se preocupe, todas as transações sao processadas pelo<Link to={'https://www.mercadopago.com.br'} style={{ color: 'black', fontWeight: 'normal', textDecoration: 'underline' }}>MercadoPago</Link>e são totalmente seguras.</h5>
