@@ -21,8 +21,7 @@ const Payments = () => {
   
   const dispatch = useDispatch();
   const navigate = useNavigate()
-  const [plan, setPlan] = useState();
-  
+  const [plan, setPlan] = useState();  
 
   initMercadoPago(MERCADOPAGO_PUBLIC_KEY, {
     locale: 'pt-BR'
@@ -49,7 +48,7 @@ const Payments = () => {
   useEffect(()=> {   
     if(planId !== '64cc09f4031c07b9b573f828') 
       dispatch(createPreference({planId}));
-  }, [planId])
+  }, [planId]);
   //#region pagamento 
   //novo plano
   const handleSubmit = async (e) => {
@@ -67,56 +66,13 @@ const Payments = () => {
       planId,
     }
     console.log(newPlanPayment)
-    const novoFree = await dispatch(processPayment({ plan: newPlanPayment, formData }));
+    await dispatch(processPayment({ plan: newPlanPayment, formData }));
     await dispatch(getUserPlans(userAuth._id));
-
-    //await dispatch(insertPlans(newPlanPayment));
 
   };
   const handleConfiguration = async(e)=>{
     navigate("/users/config/"+ userAuth._id)    
-  }
-  //upgrade de plano
-  const handleSubmitUpgrade = async (e) => {
-    e.preventDefault()
-
-    const newPlanPayment = {
-      paymentId,
-      planId,
-    }
-    window.paymentBrickController.getFormData()
-      .then(async ({ formData }) => {
-        console.log(formData)
-        const novo = await dispatch(processPayment({ plan: newPlanPayment, formData }));
-        window.paymentBrickController.unmount()
-        navigate('/user/payment/status/' + novo.payload.paymentId);
-      })
-      .catch((error) => {
-        // tratamento de erros ao chamar getFormData()
-        console.log(error)
-      });
-    //dispatch(reset());
-    if (payment) {
-      window.paymentBrickController.unmount()
-      navigate('/user/payment/status/' + payment.paymentId);
-
-      return;
-    }
-    return;
-    //to-do
-    //await dispatch(updatePlans(newPlanPayment));
-    //await dispatch(getUserPlans(userAuth._id));              
-  };
-  const onError = async (error) => {
-    // callback chamado para todos os casos de erro do Brick
-    console.log(error);
-  };
-  const onReady = async () => {
-    /*
-      Callback chamado quando o Brick estiver pronto.
-      Aqui você pode ocultar loadings do seu site, por exemplo.
-    */
-  };
+  };  
   //#endregion
   return (
     <div>

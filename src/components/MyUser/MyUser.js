@@ -14,7 +14,6 @@ const MyUser = () => {
   const { auth } = useAuth()
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.auth);
-  const { user: useer}= useSelector((state) => state.user);
 
   useEffect(() => {    
       dispatch(getUserPlans(user._id));
