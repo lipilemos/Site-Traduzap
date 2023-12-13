@@ -33,8 +33,8 @@ import { useEffect } from 'react';
 import { getAllTypesPlans } from './slices/typesPlansSlice';
 import About from './pages/About/About';
 import Policy from './pages/Policy/Policy';
-import ForgotPassword from './pages/Auth/ForgotPassword';
-import NewPassword from './pages/Auth/NewPassword';
+
+
 
 const users = [{name : "Antonio Carlos",comment: "Eu aprendi como usar agora", avatar: avatar1},
 {name : "Joice",comment: "Testando esse novo recurso...", avatar: avatar2},
